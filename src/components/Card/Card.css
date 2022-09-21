@@ -1,0 +1,97 @@
+li {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    justify-content: space-between;
+    margin: 1.5rem 0;
+    padding: 1.5rem 2rem;
+    box-shadow: hsla(180, 18%, 53%, 0.42) 0px 8px 24px;
+    transition: .2s all ease;
+}
+
+li:hover {
+    border-left: 3px solid hsl(180, 29%, 50%);
+}
+
+.left-block {
+    display: flex;
+    align-items: center;
+}
+
+.left-block img {
+    width: 80px;
+    height: 80px;
+    margin: 0 1.5rem 0 0;
+}
+
+h2 {
+    font-size: 15px;
+    color: hsl(180, 29%, 50%);
+    margin: 0 1rem 0 0;
+}
+
+.new-badge {
+    padding: 4px 8px 2px;
+    margin: 0 .5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+    color: #fff;
+    border-radius: 20px;
+    background: hsl(180, 29%, 50%);
+}
+
+.featured-badge {
+    padding: 4px 8px 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+    color: #fff;
+    border-radius: 20px;
+    background: #000;
+}
+
+.left-block h1 {
+    font-size: 17px;
+    color: hsl(180, 14%, 20%);
+    font-weight: 700;
+}
+
+.left-block .row-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.row-left-bottom.conditions p {
+    margin: 0 1rem 0 0;
+    font-size: 14px;
+    font-weight: normal;
+    color: hsl(180, 8%, 52%);
+}
+
+.row-left-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.col-left {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.right-block {
+    display: flex;
+    align-items: center;
+}
+
+.category-badge {
+    padding: 7px;
+    margin: 0 1rem 0 0;
+    background: hsl(180, 52%, 96%);
+    color: hsl(180, 29%, 50%);
+    font-weight: bold;
+    font-size: 12px;
+}
