@@ -11,16 +11,17 @@ function App() {
 
     const newFilter = (f:any) => {
         const addFilter = [f, ...filters]
-        //TODO: supprimer doublons
+        const filteredArray = addFilter.filter(function(ele , pos){
+            return addFilter.indexOf(ele) === pos;
+        })
         //TODO: Filtrer les resultat dans la liste
-        setFilters(addFilter)
+        setFilters(filteredArray)
     }
 
     const removeFilter = (name:string) => {
         const _filters:any = [...filters]
         _filters.forEach((filter:any) => {
             if(filter === name) {
-                console.log(name)
                 const index = _filters.indexOf(filter);
                 _filters.splice(index, 1);
             }
@@ -37,7 +38,7 @@ function App() {
         <main className="App">
           <TopBar/>
             {filters.length > 0 ? <FilterBar filter={filters} /> : null}
-                <CardList />
+                <CardList filters={filters} />
         </main>
       </FilterContext.Provider>
   );
